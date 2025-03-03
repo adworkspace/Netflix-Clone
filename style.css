@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    width: 100%;
+}
+
+/* Section(1) Main Starts here >>>>> */
+.main {
+    box-sizing: border-box;
+    position: relative;
+    max-height: 45rem;
+    background: url(Assets/NetflixBackground.jpg), radial-gradient(rgb(66, 66, 66), rgb(37, 37, 37));
+    background-blend-mode: overlay;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#net-icon {
+    position: relative;
+    z-index: 10;
+    width: 180px;
+}
+
+#btn-div {
+    display: flex;
+    column-gap: 8px;
+}
+
+#lang-btn {
+    display: flex;
+    column-gap: 5px;
+    padding: 8px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.637);
+    border-radius: 5px;
+    background-color: #0f0f0f;
+    color: white;
+    font-weight: 500;
+    align-items: center;
+}
+
+#lang-select {
+    position: relative;
+    border: none;
+    appearance: none;
+    padding: 0 1rem;
+    background-color: #0f0f0f;
+    color: white;
+
+}
+
+#sign-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(248, 0, 0);
+    color: white;
+    font-weight: 700;
+
+}
+
+
+#hero-content {
+    color: white;
+    text-align: center;
+    width: 40vw;
+    margin: auto;
+    margin-top: 10rem;
+}
+
+#hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+#hero-content p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+
+.form-container {
+    color: white;
+    height: 60vh;
+    width: 60vw;
+    margin: auto;
+    text-align: center;
+}
+
+.form-container p {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+#form-div form {
+    margin-top: 1.2rem;
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-div button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+#input-div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 25vw;
+    background-color: rgba(67, 67, 67, 0.591);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#input-div input {
+    font-size: 1rem;
+    padding: 10px;
+    background-color: rgba(67, 67, 67, 0);
+    color: white;
+    border: none;
+}
+
+#input-div input::placeholder {
+    color: white;
+}
+
+#input-div label {
+    color: rgb(247, 242, 242);
+}
+
+#submitbtn {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
+
+/* Section 2 Starts here >>>>> */
+.section-2 {
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+
+}
+
+#style-1::before {
+    content: "";
+    position: absolute;
+    margin-top: -.3rem;
+    border-radius: inherit;
+    width: 100%;
+    height: 4rem;
+    z-index: -1;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+}
+
+#style-1 {
+    box-sizing: border-box;
+    position: absolute;
+    margin-top: -3rem;
+    border-top-left-radius: 90% 80%;
+    border-top-right-radius: 90% 80%;
+    width: 100%;
+    height: 4rem;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+}
+
+/* Section 3 starts here >>>>> */
+.section-3 {
+    box-sizing: border-box;
+    position: relative;
+    color: white;
+    background-color: black;
+}
+
+.section-3-head {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1.2rem;
+    padding-top: 2.5rem;
+}
+
+#section-3-slider {
+    box-sizing: border-box;
+    padding: 1rem 1.8rem;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+    column-gap: 2.8rem;
+    width: 80%;
+    margin: auto;
+}
+
+#section-3-slider::-webkit-scrollbar {
+    height: .7rem;
+    background: radial-gradient(rgb(240, 3, 3), rgb(1, 1, 127));
+}
+
+#section-3-slider::-webkit-scrollbar-thumb {
+    background: radial-gradient(rgb(255, 166, 0), rgb(52, 52, 1));
+}
+
+
+.section-3-img {
+    border-radius: 1rem;
+}
+
+.section-3-items {
+    position: relative;
+}
+
+.section-3-items span {
+    position: absolute;
+    font-size: 6.5rem;
+    font-weight: 800;
+    color: black;
+    -webkit-text-stroke: rgb(232, 229, 229) .1rem;
+    bottom: .4rem;
+    left: -2rem;
+
+}
+
+
+#section-3-info {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    column-gap: 1rem;
+    position: relative;
+}
+
+.section-3-info-items {
+    width: 25%;
+    border-radius: 1rem;
+    padding: 1rem;
+    height: 15rem;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    position: relative;
+}
+
+.section-3-info-items-img {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.section-3-faq-container {
+    width: 80%;
+    margin: auto;
+
+}
+
+.section-3-faq-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    width: 100%;
+    text-align: left;
+    padding: 1.2rem;
+    margin: .5rem auto;
+}
+
+.section-3-faq-btn h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.section-3-faq-btn:hover {
+    background-color: rgb(70, 70, 70);
+}
+
+.space {
+    padding-top: 4.5rem;
+}
+
+.space-bottom {
+    padding-bottom: 5rem;
+}
+
+#bottom-form {
+    height: auto;
+    padding-bottom: 2rem;
+}
+
+
+/* Section-4 Starts here */
+.section-4 {
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+.section-4-container {
+    width: 80%;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.section-4-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
+
+
+.section-4-link-items a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+@media only screen and (max-width:1160px) {
+    #section-3-info {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .section-3-info-items {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .nav {
+        flex-direction: column;
+        row-gap: .5rem;
+    }
+
+    .section-4-links {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section-3-faq-btn h2 {
+        font-size: 1rem;
+    }
+
+    .section-3-faq-btn{
+        padding: .5rem;
+    }
+
+    .section-3-faq-btn img{
+        width: 1rem;
+    }
+
+    .section-3-img{
+        width: 8rem;
+    }
+
+    .section-3-items span{
+        font-size: 5rem;
+    }
+
+    #section-3-slider::-webkit-scrollbar{
+        height: .3rem;
+    }
+    
+}
+
+@media only screen and (max-width:700px) {
+    #form-div form {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    #hero-content h1 {
+        transition: all 1s ease-outa;
+        font-size: 2rem;
+    }
+
+    #input-div{
+        width: 50vw;
+    }
+
+    #hero-content{
+        margin-top: 8rem;
+        width: 90%;
+    }
+
+    #input-div{
+        width: 80%;
+    }
+
+    .form-container{
+        width: 90%;
+    }
+
+    #form-div button {
+        font-size: 1.2rem;
+    }
+}
